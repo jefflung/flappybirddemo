@@ -1,6 +1,12 @@
 # flappybirddemo
 This is a Unity3D project but I can only upload the C# files here. This is a porfolio project for the subject Tech for Good of Skill Bootcamp In Digital
-with Manchester Metropolitan University.
+with Manchester Metropolitan University. In the tutorial, I was taught to build a basic Flappy Bird game file that player can control the bird to fly in front of
+an infinite scrolling background and a number of pipe obstacles that player can pass through them once in the game. Besides, a game over scenario is given. 
+
+Flappy Bird is an arcade-style game in which the player controls the bird Faby, which moves persistently to the right. The player is tasked with navigating Faby through pairs of pipes that have equally sized gaps placed at random heights. Faby automatically descends and only ascends when the player taps the touchscreen. Each successful pass through a pair of pipes awards the player one point. Colliding with a pipe or the ground ends the gameplay.
+
+
+Result of Flappy Bird portfolio:
 
 I am glad to get a full mark for this project. The comment from my lecturer:
 
