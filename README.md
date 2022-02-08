@@ -4,9 +4,7 @@ with Manchester Metropolitan University.
 
 I am glad to get a full mark for this project. The comment from my lecturer:
 
-Grade	100.00 / 100.00
-Graded on Monday, 20 December 2021, 3:29 PM
-Graded by Connah Kendrick
+Grade: 100.00 / 100.00 Graded: on Monday, 20 December 2021, 3:29 PM Graded by: Connah Kendrick
 
 Games Design 30 / 30
 Games Implementation 40 / 40
