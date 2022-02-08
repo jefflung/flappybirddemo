@@ -45,13 +45,17 @@ challenges to players and extend the time they enjoy a game.
 By creating an opening animation, I have used the animation function and a script at the
 end of the timeline to start the gameplay after the animation is played.
 
+Moreover, I have found a random method of Unity on the web that it could generate a
+range of numbers so a pipe will be generated a bit different with position whenever the
+pipes are looped to exist.
+
 ```
 Random.Range(-0.5f, 0.5f),pipe.transform.position.y + Random.Range(-2.0f, 2.0f), pipe.transform.position.z);
 ```
 
-Moreover, I have found a random method of Unity on the web that it could generate a
-range of numbers so a pipe will be generated a bit different with position whenever the
-pipes are looped to exist.
+For the feature to destroy pipes, I used the code to turn the specific pipes to be inactive
+when players collide a “Power Up” capsule. Then the sound effect of power up and
+explosion and an explosion animation will play.
 
 ```
 if ( collision.gameObject.tag == "score")
@@ -64,9 +68,9 @@ if ( collision.gameObject.tag == "score")
         }
 ```
 
-For the feature to destroy pipes, I used the code to turn the specific pipes to be inactive
-when players collide a “Power Up” capsule. Then the sound effect of power up and
-explosion and an explosion animation will play.
+The looping pipes function has code to turn the specific pipes to be active, so they could
+exist again after being destroyed. Besides, the explosion animation will be set to
+inactive, so they could be triggered again when players get the capsule.
 
 ```
 transform.Find("Capsule").gameObject.SetActive(true);
@@ -74,9 +78,8 @@ transform.Find("Pipes0").gameObject.SetActive(true);
 transform.Find("Explosion").gameObject.SetActive(false);
 ```
 
-The looping pipes function has code to turn the specific pipes to be active, so they could
-exist again after being destroyed. Besides, the explosion animation will be set to
-inactive, so they could be triggered again when players get the capsule.
+When it is gameover, SetActive of the GameObject controlling the gameplay will be false
+so players cannot take anymore action.
 
 ```
 transform.parent.GetComponent<SideScroller>().xSpeed = 0;
@@ -84,9 +87,6 @@ transform.parent.Find("gameover").gameObject.SetActive(true);
 hitSound.Play();
 this.gameObject.SetActive(false);
 ```
-
-When it is gameover, SetActive of the GameObject controlling the gameplay will be false
-so players cannot take anymore action.
 
 3. Self-reflection on Game Development
 
